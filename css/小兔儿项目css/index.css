@@ -1,0 +1,598 @@
+/* 小兔鲜电商广告的特定样式 */
+
+/* 引入有顺序，先引入基础样式，再引入公共重复样式，最后是特定样式 */
+/* 固定定位返回顶部 */
+.backtop {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 25%;
+  position: fixed;
+  bottom: calc(50% - 25px);
+  right: 50px;
+}
+
+.entry {
+  height: 500px;
+  background-color: #f5f5f5;
+
+}
+
+.entry .w {
+  height: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner_circle {
+  position: absolute;
+  display: flex;
+  bottom: 53px;
+  right: 10px;
+}
+
+.category {
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.banner .prev {
+  height: 50px;
+  width: 20px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.42);
+  top: 50%;
+  right: 0;
+  margin-top: -25px;
+}
+
+.prev i {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.banner .next {
+  height: 50px;
+  width: 20px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.42);
+  top: 50%;
+  left: 250px;
+  margin-top: -25px;
+}
+
+.next i {
+  display: inline-block;
+  /* 关键：让i标签支持transform */
+  transform: rotate(180deg);
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.banner_circle li {
+  height: 14px;
+  width: 14px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.banner .banner_circle li:hover {
+  /* 阴影效果，不占位置 */
+  box-shadow: 0 0 0 4px rgba(122, 122, 122, 0.5);
+  background-color: #fff;
+}
+
+.entry .w .category {
+  height: 500px;
+  width: 250px;
+  background-color: rgba(0, 0, 0, 0.42);
+
+}
+
+.category ul {
+  height: 50px;
+  width: 100%;
+}
+
+.category ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 29px;
+  padding-right: 12px;
+  height: 50px;
+
+}
+
+.category ul li p a:nth-child(1) {
+  display: inline-block;
+  /* 关键：让a标签支持transform */
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.category ul li p a {
+  display: inline-block;
+  /* 关键：让a标签支持transform */
+  height: 50px;
+  line-height: 50px;
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.iconfont.icon-fanhui {
+  color: #ffffff;
+  transform: rotate(180deg);
+  /* 核心旋转属性 */
+  font-size: 16px;
+  /* 可选：旋转中心调整（默认是元素中心） */
+  transform-origin: center center;
+  /* 可改为 left/top 等，控制旋转支点 */
+  display: inline-block;
+  /* 若图标是行内元素，旋转后可能位置异常，改为行内块更稳定 */
+}
+
+.category ul li:hover {
+  background-color: #00BE9A;
+}
+
+.category ul li p a:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+/* 新鲜好物模块 */
+.box_hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 112px;
+  background-color: #ffffff;
+}
+
+.box_hd h2 {
+  font-size: 30px;
+  color: #333333;
+  line-height: 112px;
+}
+
+.box_hd h2 span {
+  margin-left: 35px;
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.box_hd a {
+
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.box_hd .iconfont {
+  margin-left: 8px;
+  color: #a1a1a1;
+}
+
+/* 下盒子 */
+.box_bd ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_bd ul li {
+  height: 404px;
+  width: 304px;
+  background-color: #EEF9F4;
+}
+
+.box_bd ul li:hover {
+  transform: translate(0, -10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.box_bd ul li img {
+  height: 304px;
+  width: 304px;
+}
+
+.box_bd ul li h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.box_bd ul li p {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: #AA2113;
+  margin-top: 8px;
+}
+
+.box_bd .introduce {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #a1a1a1;
+  margin-top: 15px;
+}
+
+/* 人气好物模块 */
+.box_bd1 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_bd1 ul li {
+  height: 404px;
+  width: 304px;
+  background-color: #ffffff;
+}
+
+.box_bd1 ul li img {
+  height: 304px;
+  width: 304px;
+}
+
+.box_bd1 ul li h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+.box_bd1 ul li p {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  color: #AA2113;
+  margin-top: 8px;
+}
+
+.box_bd1 .introduce {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #a1a1a1;
+  margin-top: 15px;
+}
+
+/* 热门品牌模块 */
+
+.bg {
+  height: 468px;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.box_hd2 {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 122px;
+  background-color: #f5f5f5;
+}
+
+
+.box_hd2 h2 {
+  font-size: 30px;
+  color: #333333;
+  line-height: 122px;
+}
+
+.box_hd2 h2 span {
+  margin-left: 35px;
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.box_hd2_icon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.box_hd2_icon a:nth-child(1) span img {
+  margin-top: 80px;
+  margin-right: 12px;
+  height: 20px;
+  width: 20px;
+}
+
+.box_hd2_icon a:nth-child(2) span img {
+  margin-top: 80px;
+  height: 20px;
+  width: 20px;
+}
+
+
+.box_hd2 a {
+  font-size: 16px;
+  color: #a1a1a1;
+}
+
+.box_hd2 .iconfont {
+  margin-left: 8px;
+  color: #a1a1a1;
+}
+
+.box_bd2 {
+  height: 346px;
+  background-color: #f5f5f5;
+}
+
+.box_bd2 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box_bd2 ul li {
+
+  height: 306px;
+  width: 244px;
+  background-color: #f5f5f5;
+}
+
+/* 服饰部分 */
+.head {
+  height: 122px;
+  background-color: #ffffff;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.head h2 {
+  margin-top: 40px;
+  font-size: 30px;
+  color: #333333;
+}
+
+.head .right {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #333333;
+}
+
+.head .right ul {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head .right ul li a {
+  margin-right: 20px;
+  color: #333333;
+}
+
+.head .right ul li:nth-child(1) {
+  color: #ffffff;
+}
+
+.head .right ul li:nth-child(1) a {
+  background-color: #00BE9A;
+  padding: 0 10px;
+  color: #ffffff;
+}
+
+.head .right a {
+  color: #a1a1a1;
+}
+
+.head .right a span {
+  margin-left: 8px;
+  color: #a1a1a1;
+}
+
+.head .right ul li a {
+  margin-right: 20px;
+  color: #333333;
+}
+
+.head .right ul li:nth-child(1):hover a {
+  color: #ffffff;
+}
+
+.head .right ul li a:hover {
+  color: #00BE9A;
+}
+
+.head .right a:hover {
+  color: #00BE9A;
+}
+
+/* 下盒子 */
+.foot {
+  display: flex;
+  justify-content: space-between;
+  height: 610px;
+  background-color: #ffffff;
+}
+
+.foot .left_foot {
+  height: 610px;
+  width: 248px;
+  background-color: #ffffff;
+}
+
+/* 右侧下盒子 */
+.foot .right_foot ul {
+  margin-left: 24px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.foot .right_foot ul li {
+  overflow: hidden;
+  position: relative;
+  flex: 0 0 25%;
+  height: 305px;
+  width: 242px;
+  background: #ffffff;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.foot .right_foot ul li:hover {
+  border: 2px solid #00BE9A;
+}
+
+.foot .right_foot ul li .find_more {
+  position: absolute;
+  bottom: -100px;
+  height: 93px;
+  width: 100%;
+  background-color: #00BE9A;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 93px;
+  z-index: 100;
+}
+
+/* 我们可以通过:hover伪类来实现其他元素的动画 在后面加即可 */
+.foot .right_foot ul li:hover .find_more {
+  transform: translateY(-100px);
+  background-color: #00BE9A;
+}
+
+.foot .right_foot ul li a {
+  margin-left: 10px;
+  display: flex;
+  margin-top: 14.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot .right_foot ul li a img {
+  height: 171px;
+  width: 190px;
+}
+
+.foot .right_foot ul li a h3 {
+  display: flex;
+  justify-content: left;
+  white-space: normal;
+  /* 正常换行 */
+  margin: 0;
+  /* 清除默认外边距（可选） */
+  padding: 0;
+  /* 清除默认内边距（可选） */
+  height: 57px;
+  width: 200px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.foot .right_foot ul li a p {
+  margin-left: -5px;
+  display: flex;
+  justify-content: left;
+  height: 57px;
+  width: 200px;
+  font-size: 22px;
+  color: #AF2F22;
+  align-items: center;
+}
+
+.foot .right_foot ul li a p span {
+  font-size: 16px;
+  margin-top: 4px;
+  margin-right: 3px;
+}
+
+
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 最新专题模块 */
+.new {
+  margin-bottom: 40px;
+}
+
+.new ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 355px;
+  background-color: #ffffff;
+  gap: 12px;
+}
+
+.new ul li {
+  height: 355px;
+  width: 405px;
+  background-color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.new ul li:hover {
+  z-index: 100;
+  scale: 1.1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.new ul li img {
+  width: 100%;
+  background-color: #ff7d7d;
+}
+
+.new .con {
+  height: 67px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.new .con p {
+  font-size: 14px;
+  color: #666666;
+}
+
+.new .con p:nth-child(1) span:nth-child(1) {
+  color: #ff0000;
+}
+
+.new .con span:nth-child(2) {
+  margin-left: 18px;
+}

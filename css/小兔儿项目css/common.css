@@ -1,0 +1,335 @@
+/* 公共重复样式 */
+/* 一般用来写头部和底部，因为他们基本不会变 */
+
+/* 版心部分 */
+.w {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* 快捷导航栏部分 */
+.short_nav {
+  height: 52px;
+  background: #333333;
+}
+
+.short_nav ul {
+  /* 给父亲盒子设置flex布局 */
+  height: 52px;
+  display: flex;
+  /* 设置右侧对齐 */
+  justify-content: end;
+  /* 设置垂直居中 */
+  align-items: center;
+}
+
+.short_nav ul li a {
+
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.short_nav ul li a:hover {
+  color: #5EB69C;
+}
+
+.short_nav ul li:first-child a {
+
+  color: #5EB69C;
+  font-size: 14px;
+}
+
+.short_nav .line {
+
+  height: 12px;
+  /* 做线要设置背景颜色 */
+  background-color: #999999;
+  width: 1px;
+  margin: 0 15px;
+}
+
+.short_nav span {
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+/* 头部制作*/
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 999;
+}
+
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 132px;
+  background-color: #ffffff;
+}
+
+header.header .logo {
+  height: 88px;
+  width: 200px;
+  background-color: #19caee;
+}
+
+header.header .logo h1 {
+  height: 100%;
+  width: 100%;
+}
+
+header.header .logo h1 a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  /* 把文字隐藏起来 */
+  text-indent: -9999px;
+  overflow: hidden;
+  /* 设置图片背景 */
+  background-image: url(../../photo/小兔儿鲜项目图片素材/小兔鲜儿logo.png);
+  background-size: 100% 100%;
+}
+
+/* 导航栏文字部分 */
+header.header .nav {
+  font-size: 16px;
+  color: #333333;
+}
+
+header.header .nav {
+  display: flex;
+  gap: 48px;
+
+}
+
+.nav li a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+
+}
+
+.nav li a:hover {
+  color: #5EB69C;
+  /* 制作下边框 */
+  border-bottom: 2px solid #5EB69C;
+}
+
+/* 搜索模块 */
+header.header .search {
+  position: relative;
+}
+
+header.header .search .iconfont {
+  position: absolute;
+  left: 0px;
+  top: 9px;
+  font-size: 20px;
+  color: #ccc;
+}
+
+header.header .search input {
+  height: 40px;
+  width: 170px;
+  background-color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #f4f4f4;
+  padding-left: 28px;
+}
+
+/* 表单修改字号要在选择器里面修改 */
+header.header .search input::placeholder {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.car {
+  position: relative;
+}
+
+.car i {
+  position: absolute;
+  top: -10px;
+  left: 8px;
+  padding: 2px 5px;
+  color: #ffffff;
+  background-color: #f8622b;
+  border-radius: 30%;
+  padding: 0 5px;
+}
+
+.car span.iconfont {
+  font-size: 30px;
+  color: #333;
+  margin-right: 10px;
+}
+
+.car span.iconfont:hover {
+  color: #5EB69C;
+}
+
+/* 底部 */
+.footer {
+  height: 580px;
+  background-color: #f5f5f5;
+}
+
+.slogin {
+  height: 178px;
+  width: 100%;
+  border-bottom: 1px solid #e8e8ee;
+}
+
+.slogin ul {
+  /* 给父亲盒子设置flex布局 */
+  height: 178px;
+  display: flex;
+  /* 平均分配 */
+  justify-content: space-evenly;
+  align-items: center;
+  /* 基线对齐 */
+}
+
+.slogin ul li:nth-child(1) h5 {
+  display: block;
+  height: 58px;
+  width: 58px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/价格亲民.png);
+}
+
+.slogin ul li:nth-child(2) h5 {
+  display: block;
+  height: 58px;
+  width: 58px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/物流快捷.png);
+}
+
+.slogin ul li:nth-child(3) h5 {
+  display: block;
+  height: 58px;
+  width: 58px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/品质新鲜.png);
+}
+
+.slogin ul li:nth-child(4) h5 {
+  display: block;
+  height: 58px;
+  width: 58px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/售后无忧.png);
+}
+
+
+
+.slogin ul li p {
+  margin-left: 20px;
+  font-size: 28px;
+  font-weight: normal;
+  color: #333333;
+}
+
+.slogin ul li {
+  display: flex;
+  align-items: center;
+}
+
+/* 服务模块 */
+.service {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.service_left {
+  display: flex;
+  gap: 84px;
+}
+
+
+/* 移除重复的dl样式，让dl保持默认的块级元素布局 */
+
+.service_left dt {
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.service_left dd a {
+  font-size: 16px;
+  color: #969696;
+}
+
+.service_left dd {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.service_left .iconfont {
+  margin-left: 5px;
+  color: #5EB69C;
+}
+
+.service_left dd a:hover {
+  color: #5EB69C;
+}
+
+/* 右服务的二维码 */
+.service_right {
+  display: flex;
+}
+
+.service_right ul {
+  display: flex;
+}
+
+.service_right ul li:nth-child(1) {
+  margin-left: 55px;
+  height: 120px;
+  width: 120px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/微信公众号.png);
+}
+
+.service_right ul li:nth-child(2) {
+  margin-left: 55px;
+  height: 120px;
+  width: 120px;
+  background-image: url(../../photo/小兔儿鲜项目图片素材/APP二维码.png);
+}
+
+.service_right ul li p {
+  font-size: 16px;
+  color: #969696;
+  margin-top: 130px;
+  text-align: center;
+}
+
+/* 版权模块 */
+.copyright {
+  display: flex;
+  margin-top: 100px;
+  font-size: 16px;
+  color: #A1A1A1;
+  justify-content: center;
+}
+
+.copyright ul {
+  display: flex;
+  gap: 10px;
+}
+
+.copyright ul li a {
+  display: flex;
+  font-size: 16px;
+  color: #A1A1A1;
+}
+
+.copyright_f {
+  margin-top: 10px;
+  color: #A1A1A1;
+  /* 居中对齐 */
+  text-align: center;
+}
+
+.copyright ul li a:hover {
+  color: #5EB69C;
+}

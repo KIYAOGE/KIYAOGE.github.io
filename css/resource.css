@@ -1,0 +1,70 @@
+    .box_main {
+      margin-top: 100px;
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      justify-content: space-between;
+    }
+
+
+    .box {
+      position: relative;
+      top: 0px;
+    }
+
+    [class^="font"] {
+      position: relative;
+      top: 0px;
+      z-index: 999;
+      height: 300px;
+      width: 270px;
+      border-radius: 0 20px 40px 20px;
+      background-color: #ecececb9;
+      backdrop-filter: blur(30px);
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 300px;
+    }
+
+    .back1 {
+      position: absolute;
+      top: 0px;
+      height: 300px;
+      width: 250px;
+      border-radius: 0 20px 40px 20px;
+      background-color: #4482ff;
+      transform-origin: 0% 50%;
+      transform: skewY(10deg);
+    }
+
+    .back2 {
+      position: absolute;
+      top: 0px;
+      height: 300px;
+      width: 250px;
+      border-radius: 0 20px 40px 20px;
+      background-color: #cd44ff;
+      transform-origin: 0% 50%;
+      transform: skewY(10deg);
+    }
+
+    .back3 {
+      position: absolute;
+      top: 0px;
+      height: 300px;
+      width: 250px;
+      border-radius: 0 20px 40px 20px;
+      background-color: #ffd344;
+      transform-origin: 0% 50%;
+      transform: skewY(10deg);
+    }
+
+    .box:hover [class^="font"] {
+      transform: translate(0px, -3px);
+    }
+
+    .box:hover [class^="back"] {
+      transform: skewY(15deg);
+      width: 220px;
+    }

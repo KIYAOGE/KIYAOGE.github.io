@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小兔儿首页</title>
+  <!-- 设置网页图标 -->
+  <link rel="icon" href="./ico/网站图标.ico">
+  <!-- 引入外部css文件 -->
+  <link rel="stylesheet" href="./css/小兔儿项目css/base.css">
+  <link rel="stylesheet" href="./css/小兔儿项目css/common.css">
+  <link rel="stylesheet" href="./css/小兔儿项目css/index.css">
+  <style>
+    /* 固定定位返回顶部 */
+    .backtop {
+      width: 50px;
+      height: 50px;
+      background-color: #ffffff;
+      border-radius: 25%;
+      position: fixed;
+      bottom: calc(50% - 25px);
+      right: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 网页的头部 -->
+  <!-- 1.快捷导航栏 -->
+  <div class="short_nav">
+    <div class="w">
+      <ul>
+        <li>
+          <a href="#">请先登录 </a>
+        </li>
+        <li class="line"></li>
+        <li>
+          <a href="#">免费注册</a>
+        </li>
+        <li class="line"></li>
+        <li><a href="#">我的订单</a></li>
+        <li class="line"></li>
+        <li><a href="#">会员中心</a></li>
+        <li class="line"></li>
+        <li><a href="#">帮助中心</a></li>
+        <li class="line"></li>
+        <li><a href="#">在线客服</a></li>
+        <li class="line"></li>
+        <li><a href="#"> <span class="iconfont icon-xiyiji"></span>手机版</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 返回顶部 -->
+  <div class="backtop">
+    <a href="#">返回顶部</a>
+  </div>
+  <!-- 1.1头部部分 -->
+  <header class="header w">
+    <div class="logo">
+      <h1>
+        <!-- title设置显示词  -->
+        <a href="#" title="小兔鲜儿">小兔鲜儿</a>
+      </h1>
+    </div>
+    <!-- 导航文字 -->
+    <ul class="nav">
+      <li><a href="#">首页</a></li>
+      <li><a href="#">生鲜</a></li>
+      <li><a href="#">美食</a></li>
+      <li><a href="#">餐厨</a></li>
+      <li><a href="#">电器</a></li>
+      <li><a href="#">居家</a></li>
+      <li><a href="#">洗护</a></li>
+      <li><a href="#">孕婴</a></li>
+      <li><a href="#">服装</a></li>
+    </ul>
+    <div class="search">
+      <input type="text" placeholder="搜一搜">
+      <span class="iconfont icon-kandian-zhihui"></span>
+    </div>
+
+  </header>
+  <!-- 2.1首页主体 -->
+  <!-- entry模块制作 -->
+  <div class="entry">
+    <div class="w">
+      <div class="banner">
+        <!-- 添加左右按钮 -->
+        <a href="#" class="prev"><i class="iconfont icon-fanhui"></i></a>
+        <a href="#" class="next"><i class="iconfont icon-fanhui"></i></a>
+        <!-- 侧边栏相对定位 -->
+        <div class="category">
+          <ul> <!-- 同一个li下的不同链接应该给li做hover效果 -->
+            <li> <!-- 要flex布局就要有两个在父亲元素下的子元素 -->
+              <p> <a href="#">生鲜</a> <a href="#">水果</a> <a href="#">蔬菜</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">美食</a> <a href="#">面点</a> <a href="#">干果</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">餐厨</a> <a href="#">数码产品</a> </p> <span class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">电器</a> <a href="#">床品</a> <a href="#">四件套</a> <a href="#">被枕</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">居家</a> <a href="#">奶粉</a> <a href="#">玩具</a> <a href="#">辅食</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">洗护</a> <a href="#">洗发</a> <a href="#">洗护</a> <a href="#">美装</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">孕婴</a> <a href="#">奶粉</a> <a href="#">玩具</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">服饰</a> <a href="#">女装</a> <a href="#">男装</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">杂货</a> <a href="#">户外</a> <a href="#">图书</a> </p> <span
+                class="iconfont icon-fanhui"></span>
+            </li>
+            <li>
+              <p> <a href="#">品牌</a> <a href="#">品牌制造</a> </p> <span class="iconfont icon-fanhui"></span>
+            </li>
+          </ul>
+        </div>
+        <!-- 图片切换 -->
+        <ul>
+          <li><a href="#"><img src="./photo/小兔儿鲜项目图片素材/entery.jpg" alt="">
+            </a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+        <!-- 切换原点 -->
+        <ul class="banner_circle">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 新鲜好物模块 -->
+  <div class="w">
+    <div class="box_hd">
+      <h2>新鲜好物 <span>新鲜出炉 品质靠谱</span></h2>
+      <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+    </div>
+    <div class="box_bd">
+      <ul>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/新鲜好物1.png" alt="">
+            <h3>
+              KN95级莫兰迪防护口罩
+            </h3>
+            <p>￥ 79</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/新鲜好物2.png" alt="">
+            <h3>
+              紫衫外独板三层普洱茶盒
+            </h3>
+            <p>￥ 566</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/新鲜好物3.png" alt="">
+            <h3>
+              法拉第高颜值笔记本可定制
+            </h3>
+            <p>￥ 58</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/新鲜好物4.png" alt="">
+            <h3>
+              科技布布艺沙发
+            </h3>
+            <p>￥ 3999</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 人气好物模块 -->
+  <div class="w">
+    <div class="box_hd">
+      <h2>人气推荐 <span>人气爆款 品质靠谱</span></h2>
+      <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+    </div>
+    <div class="box_bd1">
+      <ul>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/人气推荐1.png" alt="">
+            <h3>
+              特惠推荐
+            </h3>
+            <p class="introduce">我猜得到 你的需要</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/人气推荐3.png" alt="">
+            <h3>
+              节日礼品一站买全
+            </h3>
+            <p class="introduce">编辑尽心整理推荐</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/人气推荐3.png" alt="">
+            <h3>
+              节日礼品一站买全
+            </h3>
+            <p class="introduce">编辑尽心整理推荐</p>
+          </a>
+        </li>
+        <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/人气推荐4.png" alt="">
+            <h3>
+              鲜花园艺
+            </h3>
+            <p class="introduce">给生活增加仪式感</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 热门品牌模块 -->
+  <div class="bg">
+    <div class="w">
+
+      <div class="box_hd2">
+        <h2>热门品牌 <span>国际经典 品质认证</span></h2>
+        <div class="box_hd2_icon">
+          <a href="#"><span><img src="./photo/小兔儿鲜项目图片素材/left.png" alt=""></span></a>
+          <a href="#"><span><img src="./photo/小兔儿鲜项目图片素材/right.png" alt=""></span></a>
+        </div>
+      </div>
+
+      <div class="box_bd2">
+        <ul>
+          <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/热门品牌1.png" alt="">
+            </a>
+          </li>
+          <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/热门品牌2.png" alt="">
+
+            </a>
+          </li>
+          <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/热门品牌3.png" alt="">
+
+            </a>
+          </li>
+          <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/热门品牌4.png" alt="">
+
+            </a>
+          </li>
+          <li><a href=""><img src="./photo/小兔儿鲜项目图片素材/热门品牌5.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 服饰模块 -->
+  <div class="w">
+    <!-- 上盒子 -->
+    <div class="head">
+      <h2>生鲜</h2>
+      <div class="right">
+        <ul>
+          <li><a href="#">热门</a></li>
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">肉禽蛋</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">海鲜</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">饮料</a></li>
+        </ul>
+        <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+      </div>
+    </div>
+    <!-- 下盒子 -->
+    <div class="foot">
+      <div class="left_foot">
+        <a href=""><img src="./photo/小兔儿鲜项目图片素材/商品介绍卡片生鲜.png" alt=""></a>
+      </div>
+      <div class="right_foot">
+        <ul>
+          <li>
+            <a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 12.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/馒头.png" alt="">
+                <h3>云南甘蔗慢熬红糖馒头<br>
+                  220g/袋 5个装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 9.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/面包.png" alt="">
+                <h3>全麦奶油浓香小面包<br>
+                  50g*12袋<br>
+                  美味西点</h3>
+                <p><span>￥</span> 19.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/小圆饼.png" alt="">
+                <h3>日式风味小圆饼<br>
+                  圆形【海盐味】<br>
+                  糖果零食</h3>
+                <p><span>￥</span> 15.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/巧克力.png" alt="">
+                <h3>进口黑巧克力<br>
+                  纯可可脂<br>
+                  丝滑口感</h3>
+                <p><span>￥</span> 29.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/大福.png" alt="">
+                <h3>日式抹茶大福<br>
+                  软糯香甜<br>
+                  传统工艺</h3>
+                <p><span>￥</span> 18.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/奶泡.png" alt="">
+                <h3>手工奶泡饼干<br>
+                  酥脆可口<br>
+                  营养美味</h3>
+                <p><span>￥</span> 12.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/蜂蜜.png" alt="">
+                <h3>混合水果硬糖<br>
+                  多种口味<br>
+                  酸甜可口</h3>
+                <p><span>￥</span> 25.90</p>
+              </div>
+            </a>
+            <div class="find_more">找相似</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 重复模块 -->
+  <div class="w">
+    <!-- 上盒子 -->
+    <div class="head">
+      <h2>服饰</h2>
+      <div class="right">
+        <ul>
+          <li><a href="#">热门</a></li>
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">肉禽蛋</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">海鲜</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">饮料</a></li>
+        </ul>
+        <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+      </div>
+    </div>
+    <!-- 下盒子 -->
+    <div class="foot">
+      <div class="left_foot">
+        <a href=""><img src="./photo/小兔儿鲜项目图片素材/商品介绍卡片-服饰.png" alt=""></a>
+      </div>
+      <div class="right_foot">
+        <ul>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/帆布鞋.png" alt="">
+                <h3>复古帆布休闲鞋<br>
+                  经典百搭款<br>
+                  舒适透气</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/打底衫.png" alt="">
+                <h3>纯棉舒适打底衫<br>
+                  多色可选<br>
+                  柔软亲肤</h3>
+                <p><span>￥</span> 29.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/文艺袜子.png" alt="">
+                <h3>文艺风棉袜套装<br>
+                  10双装<br>
+                  透气吸汗</h3>
+                <p><span>￥</span> 19.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/裤子.png" alt="">
+                <h3>休闲直筒牛仔裤<br>
+                  修身版型<br>
+                  弹力舒适</h3>
+                <p><span>￥</span> 129.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/发卡.png" alt="">
+                <h3>韩式精美发卡<br>
+                  多款式可选<br>
+                  时尚百搭</h3>
+                <p><span>￥</span> 15.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>纯棉长袖衬衫<br>
+                  商务休闲款<br>
+                  挺括有型</h3>
+                <p><span>￥</span> 79.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>针织羊毛衫<br>
+                  保暖舒适<br>
+                  时尚简约</h3>
+                <p><span>￥</span> 159.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="w">
+    <!-- 上盒子 -->
+    <div class="head">
+      <h2>餐厨</h2>
+      <div class="right">
+        <ul>
+          <li><a href="#">热门</a></li>
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">肉禽蛋</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">海鲜</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">饮料</a></li>
+        </ul>
+        <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+      </div>
+    </div>
+    <!-- 下盒子 -->
+    <div class="foot">
+      <div class="left_foot">
+        <a href=""><img src="./photo/小兔儿鲜项目图片素材/商品介绍卡片-餐厨.png" alt=""></a>
+      </div>
+      <div class="right_foot">
+        <ul>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>舒适棉麻抱枕<br>
+                  45cm*45cm<br>
+                  柔软亲肤</h3>
+                <p><span>￥</span> 39.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/花瓶.png" alt="">
+                <h3>简约陶瓷花瓶<br>
+                  多种尺寸<br>
+                  优雅美观</h3>
+                <p><span>￥</span> 49.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>LED护眼台灯<br>
+                  三档调光<br>
+                  节能环保</h3>
+                <p><span>￥</span> 89.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>塑料收纳盒<br>
+                  多规格可选<br>
+                  防潮防尘</h3>
+                <p><span>￥</span> 29.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>纯棉吸水毛巾<br>
+                  柔软亲肤<br>
+                  不易掉毛</h3>
+                <p><span>￥</span> 15.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>防滑地垫<br>
+                  多种图案<br>
+                  舒适耐磨</h3>
+                <p><span>￥</span> 59.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>智能电子闹钟<br>
+                  多功能<br>
+                  静音设计</h3>
+                <p><span>￥</span> 69.90</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>天然植物香薰<br>
+                  多种香味<br>
+                  舒缓身心</h3>
+                <p><span>￥</span> 45.90</p>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="w">
+    <!-- 上盒子 -->
+    <div class="head">
+      <h2>居家</h2>
+      <div class="right">
+        <ul>
+          <li><a href="#">热门</a></li>
+          <li><a href="#">蔬菜</a></li>
+          <li><a href="#">肉禽蛋</a></li>
+          <li><a href="#">水果</a></li>
+          <li><a href="#">海鲜</a></li>
+          <li><a href="#">零食</a></li>
+          <li><a href="#">饮料</a></li>
+        </ul>
+        <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+      </div>
+    </div>
+    <!-- 下盒子 -->
+    <div class="foot">
+      <div class="left_foot">
+        <a href=""><img src="./photo/小兔儿鲜项目图片素材/商品介绍卡片-居家.png" alt=""></a>
+      </div>
+      <div class="right_foot">
+        <ul>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/馒头.png" alt="">
+                <h3>云南甘蔗慢熬红糖馒头<br>
+                  220g/袋 5个装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 9</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/面包.png" alt="">
+                <h3>全麦奶油浓香小面包<br>
+                  50g*12袋<br>
+                  美味西点</h3>
+                <p><span>￥</span> 9.00</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/小圆饼.png" alt="">
+                <h3>日式风味小圆饼<br>
+                  圆形【海盐味】<br>
+                  糖果零食</h3>
+                <p><span>￥</span> 588</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+          <li><a href="#">
+              <div class="img"><img src="./photo/小兔儿鲜项目图片素材/手抓饼.png" alt="">
+                <h3>双味千层，手抓饼烤肉组合<br>
+                  240g/袋 4片装<br>
+                  加热即食</h3>
+                <p><span>￥</span> 89.99</p>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 最新专题模块 -->
+  <div class="w">
+    <!-- 上盒子 -->
+    <div class="head">
+      <h2>最新专题</h2>
+      <div class="right">
+        <a href="#">查看全部<span class="iconfont icon-fanhui"></span></a>
+      </div>
+    </div>
+    <!-- 下盒子 -->
+    <div class="new">
+      <ul>
+        <li>
+          <div class="img"><img src="./photo/小兔儿鲜项目图片素材/最新专题1.png" alt=""></div>
+          <div class="con">
+            <p><span class="iconfont icon-guanzhu-zhihui"></span>1220
+              <span class="iconfont icon-anquanjiankong"></span>1800
+            </p>
+            <p><span class="iconfont icon-fenxiang"></span>246</p>
+          </div>
+        </li>
+        <li>
+          <div class="img"><img src="./photo/小兔儿鲜项目图片素材/最新专题2.png" alt=""></div>
+          <div class="con">
+            <p><span class="iconfont icon-guanzhu-zhihui"></span>6703
+              <span class="iconfont icon-anquanjiankong"></span>3800
+            </p>
+            <p><span class="iconfont icon-fenxiang"></span>2206</p>
+          </div>
+        </li>
+        <li>
+          <div class="img"><img src="./photo/小兔儿鲜项目图片素材/最新专题3.png" alt=""></div>
+          <div class="con">
+            <p><span class="iconfont icon-guanzhu-zhihui"></span>11210
+              <span class="iconfont icon-anquanjiankong"></span>10132
+            </p>
+            <p><span class="iconfont icon-fenxiang"></span>5636</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 3.网页的底部 -->
+  <footer class="footer">
+    <div class="w">
+      <div class="slogin">
+        <ul>
+          <li>
+            <h5></h5>
+            <p>价格亲民</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>物流快捷</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>品质新鲜</p>
+          </li>
+          <li>
+            <h5></h5>
+            <p>售后无忧</p>
+          </li>
+        </ul>
+      </div>
+      <div class="service">
+
+        <div class="service_left">
+          <dl>
+            <dt>购物指南 </dt>
+            <dd><a href="#">购物流程</a></dd>
+            <dd><a href="#">支付方式</a></dd>
+            <dd><a href="#">售后政策</a></dd>
+          </dl>
+          <dl>
+            <dt>配送方式</dt>
+            <dd><a href="#">配送运费</a></dd>
+            <dd><a href="#">配送范围</a></dd>
+            <dd><a href="#">配送时间</a></dd>
+          </dl>
+          <dl>
+            <dt>关于我们</dt>
+            <dd><a href="#">平台规则</a></dd>
+            <dd><a href="#">联系我们</a></dd>
+            <dd><a href="#">问题反馈</a></dd>
+          </dl>
+          <dl>
+            <dt>售后服务</dt>
+            <dd><a href="#">售后政策</a></dd>
+            <dd><a href="#">退款说明</a></dd>
+            <dd><a href="#">取消订单</a></dd>
+          </dl>
+          <dl>
+            <dt>服务热线</dt>
+            <dd><a href="#">在线客服<span class="iconfont icon-gerenzhongxin-zhihui"></span></a></dd>
+            <dd><a href="#">客服电话 400-0000-000</a></dd>
+            <dd><a href="#">工作时间 周一至周日 8:00-18:00</a></dd>
+          </dl>
+        </div>
+        <div class="service_right">
+          <ul>
+            <li>
+              <p>微信公众号</p>
+            </li>
+            <li>
+              <p>APP下载二维码</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <ul>
+          <li>
+            <a href="#">关于我们&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">帮助中心&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">售后服务&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">配送与验收&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">商务合作&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">搜索推荐&nbsp;&nbsp;&nbsp;|</a>
+          </li>
+          <li>
+            <a href="#">友情链接</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 版权信息 -->
+      <p class="copyright_f">
+        Copyright &copy; 小兔儿
+      </p>
+    </div>
+  </footer>
+</body>
+
+
+</html>

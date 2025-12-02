@@ -1,0 +1,56 @@
+/* 设置索引页主体 */
+.index {
+  height: 600px;
+  background-color: #d6d6d6;
+}
+
+.index_box {
+  height: 100%;
+  column-count: 4;
+  column-gap: 20px;
+}
+
+.index_box a {
+  display: block;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 200px;
+}
+
+.index_box a:hover {
+  transform: scale(1.1) translateY(-10px);
+}
+
+.index_item1 {
+  height: 100%;
+  background-image: url(../photo/背景gif.gif);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.index_item2 {
+  height: 100%;
+  background-image: url(../photo/czw.jpg);
+
+}
+
+.index_item3 {
+  height: 100%;
+  background-image: url(../photo/呱呱鸟/P1811057.JPG);
+  background-size: cover;
+}
+
+.index_item4 {
+  height: 100%;
+  background-image: url(../photo/preview.gif);
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+[class^="index_item"]:hover {
+  transform: perspective(600px) scale(1.1) translateY(-10px) rotateY(360deg);
+  box-shadow: 0 0 10px #000000;
+  transition: all 1s ease-in-out;
+}
